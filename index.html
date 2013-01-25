@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Noah Watkins"
+---
+
+{% for post in site.posts offset: 0 %}
+
+<h1>{{ post.title }}</h1>
+
+<div style="margin-left: 15px; width: 600px; text-align:justify;">
+  {{ post.content }}
+</div>
+
+{% endfor %}

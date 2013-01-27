@@ -21,7 +21,8 @@ it recover by returning execution to a safe context. We do this using
 [setjmp.h](http://en.wikipedia.org/wiki/Setjmp.h), which happens to be used
 extensively in the implementation of Lua.
 
-<h2>Example Setup</h2>
+Example Setup
+-------------
 
 In order to use `setjmp/longjmp` we record a jump position that we can return
 to. This position in the code is help in the variable `custom_lua_panic_jmp`,
